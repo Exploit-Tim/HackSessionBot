@@ -17,7 +17,7 @@ CHAT = Config.CHAT
 
 
 if not START_PIC:
-    START_PIC = "https://graph.org/file/864483e9fb1cec38b67fe.jpg"
+    START_PIC = "https://telegra.ph//file/aafc846e3a1ea2497e32a.jpg"
 
 #rich
 LOG = Console()
